@@ -1,9 +1,11 @@
-
 import { useState } from 'react';
 import '.././styles/Layout.css'
 
 import Box from '@mui/material/Box';
 import Modal from './Modal';
+
+import { data } from '../data/dataMerger';
+import DataDisplay from './DataDisplay';
 
 function Layout() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -11,13 +13,19 @@ function Layout() {
 
   const toggleModal = (e) => {
     setModalOpen(!modalOpen)
-    setClickedItem(e.target.className)
+    const data = filterData(e.target.className)
+    setClickedItem(data)
+  }
+
+  const filterData = (category) => {
+    const result = data[`${category}`]
+    return result
   }
 
   const [menuElements, setMenuElements] = useState([
     {title: 'work', id: 1},
     {title: 'schools', id: 2},
-    {title: 'tech-stack', id: 3},
+    {title: 'techStack', id: 3},
     {title: 'contact', id: 4},
     {title: 'intro', id: 5},
     {title: 'refi1', id: 6},
@@ -29,27 +37,26 @@ function Layout() {
     {title: 'refi7', id: 12},
     {title: 'refi8', id: 15},
   ])
-    
-
+     
   return (
   
     <div className="Layout">
-
+ 
       <Box className="grid-container">
-
         {menuElements.map((menu) => (
           <div className={menu.title} key={menu.id} onClick={(e) => toggleModal(e)}>
             {menu.title}
-            {modalOpen &&
-            <Modal onClick={toggleModal}>
-              <p>{clickedItem}</p>
-            </Modal>
-            }
           </div>
         ))}
-
-        
       </Box>
+
+      {modalOpen &&
+        <div onClick={toggleModal}>
+          <Modal >
+            <DataDisplay clickedItem={clickedItem} />
+          </Modal>
+        </div>
+      }
 
     </div>
   );
