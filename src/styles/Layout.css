@@ -1,23 +1,122 @@
+:root {
+  --d:0s;
+  --td:0.8s;
+  --ad:0.2s
+}
+
 .Layout {
-  margin-top: 40px;
+  margin-top: 100px;
 }
 
 .grid-container > * {
-  border: 1px solid #000;
-  border-radius: 25px;
+  border-radius: 5px;
   text-align: center;
+  background-color: white;
+  box-shadow: 1px 2px 8px rgba(0,0,0,0.5);
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+
+  height: 100%;
+  display: grid;
+  transition-duration: 0.8s;
 }
 
-.grid-container{
+.grid-container {
   display: grid;
   grid-auto-flow: row;
   grid-template-columns: repeat(6,1fr);
   gap: 5px;
-  height: 90vh;
+  height: 70vh;
   width: 90%;
+  max-width: 1200px;
   margin: auto;
-  justify-content: space-evenly;
+}
 
+.grid-container > *:hover{
+  --t: calc(var(--td) + var(--d));
+  color: transparent;
+  position: relative;
+  overflow: hidden;
+
+  transform-origin: center center;
+  transform: scale(0.93);
+  transition-duration: 0.8s;
+}
+
+@keyframes revealingIn {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 70%;
+  }
+}
+
+@keyframes revealingOut {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes appear {
+  0%,7%,100% {
+    opacity: 0;
+  }  
+  8%,95% {
+    opacity: 1;
+  }  
+}
+
+.grid-container > *::after {
+  content: '';
+  height: 0%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  transform-origin: bottom;
+  background: var(--secondary);
+  animation: revealingIn var(--td) var(--d) forwards, revealingOut var(--td) var(--t) forwards;
+}
+
+.grid-container > .refi1::after,
+.grid-container > .refi2::after,
+.grid-container > .refi3::after,
+.grid-container > .refi4::after,
+.grid-container > .refi5::after,
+.grid-container > .refi6::after,
+.grid-container > .refi7::after,
+.grid-container > .refi8::after,
+.grid-container > .refi9::after,
+.grid-container > .refi10::after {
+  display: none;
+}
+
+.displayName {
+  font-size: 12px;
+  font-weight: 600;
+  align-self: flex-end;
+  text-align: right;
+  padding-right: 10px;
+  color: var(--main);
+  transition-duration: 0.8s;
+}
+
+.refi1 > .displayName,
+.refi2 > .displayName,
+.refi3 > .displayName,
+.refi4 > .displayName,
+.refi5 > .displayName,
+.refi6 > .displayName,
+.refi7 > .displayName,
+.refi8 > .displayName,
+.refi9 > .displayName,
+.refi10 > .displayName {
+  color: var(--secondary);
 }
 
 .techStack {
@@ -55,7 +154,11 @@
 }
 
 .refi5 {
-  grid-row: 2 / 4;
+  grid-row: 2 / 3;
+  grid-column: 5 / 6;
+}
+.refi9 {
+  grid-row: 3 / 4;
   grid-column: 5 / 6;
 }
 
@@ -80,6 +183,64 @@
 }
 
 .refi7 {
-  grid-row: 3 / 5;
+  grid-row: 3 / 4;
   grid-column: 6 / 7;
 }
+.refi9 {
+  grid-row: 4 / 5;
+  grid-column: 6 / 7;
+}
+
+svg {
+  opacity: 0;
+  color: #fff;
+  display: block;
+  margin: auto;
+}
+
+.grid-container > *:hover > svg {
+  animation: appear 10s ease-in var(--ad) ;
+}
+
+.intro > svg,
+.techStack > svg,
+.work > svg,
+.schools > svg,
+.contact > svg {
+  font-size: 100px;
+  padding-top: 0.5vw;
+  filter: invert(43%) sepia(16%) saturate(6001%) hue-rotate(253deg) brightness(81%) contrast(92%);
+}
+
+.refi1 > svg,
+.refi2 > svg,
+.refi3 > svg,
+.refi4 > svg,
+.refi5 > svg,
+.refi6 > svg,
+.refi7 > svg,
+.refi8 > svg,
+.refi9 > svg,
+.refi10 > svg {
+  font-size: 40px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  z-index: 2;
+}
+
+.bgImg {
+  position: relative;
+  width: 150%;
+  left: -25%;
+  top: 0;
+  transition-duration: 0.8s;
+}
+
+.grid-container > *:hover > .bgImg {
+  transform-origin: top center;
+  top: -25%;
+  transform: scale(2);
+  transition-duration: 0.8s;
+}
+

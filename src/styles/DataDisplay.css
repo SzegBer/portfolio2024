@@ -1,0 +1,124 @@
+/*--------- TECH-STACK ----------*/
+
+.DataDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+
+  justify-content: space-evenly;
+}
+
+
+.DataDisplay > .techStack {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 5px;
+  width: 80px;
+  padding: 15px;
+  height: fit-content;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.DataDisplay > .techStack > img {
+  flex-basis: 100%;
+  width: 50px;
+  height: fit-content;
+}
+
+.DataDisplay > .techStack > .imgTitle {
+  flex-basis: 100%;
+  text-align: center;
+  margin: 0;
+
+  font-size: 12px;
+}
+
+/*--------- SCHOOLS ----------*/
+/*--------- WORK ----------*/
+
+.DataDisplay > .schools,
+.DataDisplay > .work {
+  flex-basis: 100%;
+  margin: 50px 20px 0px;
+}
+
+.DataDisplay > .schools:nth-child(even),
+.DataDisplay > .work:nth-child(even) {
+  text-align: right;
+  margin-right: 55%;
+}
+.DataDisplay > .schools:nth-child(odd),
+.DataDisplay > .work:nth-child(odd) {
+  text-align: left;
+  margin-left: 55%;
+}
+
+.DataDisplay > .schools > h2,
+.DataDisplay > .work > h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+.DataDisplay > .schools > h3,
+.DataDisplay > .work > h3 {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-size: 30px;
+  margin: 5px 0px 10px;
+}
+.DataDisplay > .schools > .description,
+.DataDisplay > .work > .description {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+/*--------- INTRO ----------*/
+
+.DataDisplay > .intro {
+  flex-basis: 100%;
+}
+
+.DataDisplay > .intro > h2 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 30px;
+}
+.DataDisplay > .intro > h3 {
+  padding: 0;
+  margin: 50px 20px 10px;
+  line-height: 1;
+  font-size: 20px;
+}
+.DataDisplay > .intro > .description {
+  padding: 0;
+  margin: 0px 20px;
+  font-size: 14px;
+  text-align: justify;
+}
+
+
+/*--------- CONTACT ----------*/
+
+.DataDisplay > .contact {
+  flex-basis: 100%;
+}
+
+.DataDisplay > .contact > h2 {
+  padding: 0;
+  margin: 10px 20px 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.DataDisplay > .contact > .description {
+  padding: 0;
+  margin: 50px;
+  font-size: 14px;
+  text-align: center;
+}

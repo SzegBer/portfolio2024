@@ -1,37 +1,27 @@
 export const schools = [
   {
-  h2: "2000 - 2005",
-  h3: "Iskola",
-  p: "lorem ipsum bla bla bla",
+  h2: "2024",
+  h3: "Google Analytics 4",
+  p: "Kürt Akadémia",
   },
   {
-  h2: "2005 - 2010",
-  h3: "Főiskola",
-  p: "lorem bla bla",
-  },
-  {
-  h2: "2022",
-  h3: "Egyetem",
-  p: "lorem ipsum bla bla",
+  h2: "2023",
+  h3: "Junior Frontend Fejlesztő",
+  p: "CodeCool",
   },
   {
   h2: "2022",
-  h3: "Egyetem",
-  p: "lorem ipsum bla bla",
+  h3: "Online Marketing Alapismeretek",
+  p: "Ruander Oktatóközpont",
   },
   {
   h2: "2022",
-  h3: "Egyetem",
-  p: "lorem ipsum bla bla",
+  h3: "Kiadványszerkesztő",
+  p: "Ruander Oktatóközpont",
   },
   {
-  h2: "2022",
-  h3: "Egyetem",
-  p: "lorem ipsum bla bla",
-  },
-  {
-  h2: "2022",
-  h3: "Egyetem",
-  p: "lorem ipsum bla bla",
-  },
+  h2: "2004",
+  h3: "Érettségi",
+  p: "Magyar Hajózási Szakközépiskola & Szakiskola",
+  }
 ]

@@ -1,3 +1,13 @@
+:root {
+  --main:;
+  --secondary:#FCCD04;
+  --third:#FFB48F;
+  --light:#F5E6CC;
+  --teal:#17E9E0;
+  --lightGrey:#e9e9e9;
+  --darkTeal:#17252A;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,4 +15,5 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--darkTeal);
 }
