@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '.././styles/DataDisplay.css'
 
 export default function DataDisplay({ clickedItem, clickedClassName }) {
 
+ 
   return (
 
     <div className='DataDisplay'>

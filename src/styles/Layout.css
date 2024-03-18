@@ -101,7 +101,7 @@
   overflow: hidden; */
 
   transform-origin: center center;
-  transform: scale(0.93);
+  transform: scale(0.97);
   transition-duration: 0.8s;
 }
 
@@ -129,6 +129,7 @@
   padding-right: 10px;
   color: var(--main);
   transition-duration: 0.8s;
+  pointer-events: none;
 }
 
 .refi > .displayName {
@@ -140,10 +141,11 @@ svg {
   color: #fff;
   display: block;
   margin: auto;
+  pointer-events: none;
 }
 
 .grid-container > *:hover > svg {
-  animation: appear 10s ease-in var(--ad), shake 1s calc(var(--td)*2) ;
+  animation: appear 10s ease-in var(--ad), shake 1s calc(var(--td)*3) ;
 }
 
 .intro > svg,

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../styles/Layout.css'
 import { menuElements } from '../data/menuElements';
 

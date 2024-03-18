@@ -99,5 +99,106 @@
   }
 }
 
+/* ------------ DATA DISPLAY EFFECTS (WORK & SCHOOLS) -------------- */
+
+@keyframes revealRTL {
+  0%{
+    width: 0;
+    right: 0;
+  }
+  50%{
+    width: 105%;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    right: 105%;
+  }
+}
+@-webkit-keyframes revealRTL {
+  0%{
+    width: 0;
+    right: 0;
+  }
+  50%{
+    width: 105%;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    right: 105%;
+  }
+}
+
+@keyframes revealLTR {
+  0%{
+    width: 0;
+    left: 0;
+  }
+  50%{
+    width: 105%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 105%;
+  }
+}
+@-webkit-keyframes revealLTR {
+  0%{
+    width: 0;
+    left: 0;
+  }
+  50%{
+    width: 105%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 105%;
+  }
+}
+@keyframes textHidden {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes textHidden {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 /* ------------ LOADING Animations -------------- */
+
+@keyframes dropFromTop {
+  0%{
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes dropFromTop {
+  0%{
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    opacity: 1;
+  }
+}
