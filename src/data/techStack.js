@@ -92,7 +92,7 @@ export const techStack = [
     imgTitle: "JotForm"
   },
   {
-    img: "https://png2.cleanpng.com/sh/671b03d4f906f81bf007b9a3fd347bd6/L0KzQYm3VsAyN5JAgZH0aYP2gLBuTfVuaaN4keU2c3Prh7bwmr1odZNtRd9qcnvohLr1h71td5h0RdRAc3nxdcT6TgRwNZR0Rdh7ZYPrPYbpUcE1PpNmSqdqYUe3Poq6Vck1OWo1Sac7N0i4SImAVME2PGQziNDw/kisspng-emarsys-schweiz-gmbh-marketing-logo-business-to-co-fresh-5b1146ba25aa74.9359419015278588741543.png",
+    img: "https://a.storyblok.com/f/140664/525x480/067605d6db/emarsys-logo-square.png",
     imgTitle: "Emarsys"
   },
   {

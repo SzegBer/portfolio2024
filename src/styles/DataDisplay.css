@@ -1,39 +1,44 @@
-/*--------- TECH-STACK ----------*/
+@import "Animations.css";
+
+:root {
+  --d:0s;
+  --td:0.8s;
+  --ad:0.2s;
+}
 
 .DataDisplay {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 10px;
-
   justify-content: space-evenly;
 }
 
+/*--------- TECH-STACK ----------*/
 
 .DataDisplay > .techStack {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   gap: 5px;
-  width: 80px;
+  width: 70px;
   padding: 15px;
-  height: fit-content;
-  justify-content: space-between;
-  align-self: center;
+
+  justify-content: space-evenly;
+  align-items: center;
+
 }
 
 .DataDisplay > .techStack > img {
-  flex-basis: 100%;
-  width: 50px;
-  height: fit-content;
+  width: 100%;
+  max-height: 70px;
 }
 
-.DataDisplay > .techStack > .imgTitle {
-  flex-basis: 100%;
+.DataDisplay > .techStack > p.imgTitle {
   text-align: center;
   margin: 0;
-
   font-size: 12px;
+  height: fit-content;
 }
 
 /*--------- SCHOOLS ----------*/
@@ -70,12 +75,14 @@
   font-size: 30px;
   margin: 5px 0px 10px;
 }
-.DataDisplay > .schools > .description,
-.DataDisplay > .work > .description {
+.DataDisplay > .schools > p.description,
+.DataDisplay > .work > p.description {
   padding: 0;
   margin: 0;
+  line-height: 1.4;
   font-size: 14px;
 }
+
 
 /*--------- INTRO ----------*/
 
@@ -95,13 +102,12 @@
   line-height: 1;
   font-size: 20px;
 }
-.DataDisplay > .intro > .description {
+.DataDisplay > .intro > p.description {
   padding: 0;
   margin: 0px 20px;
   font-size: 14px;
   text-align: justify;
 }
-
 
 /*--------- CONTACT ----------*/
 
@@ -116,7 +122,7 @@
   font-size: 30px;
 }
 
-.DataDisplay > .contact > .description {
+.DataDisplay > .contact > p.description {
   padding: 0;
   margin: 50px;
   font-size: 14px;

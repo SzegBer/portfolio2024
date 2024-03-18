@@ -1,8 +1,6 @@
 import '.././styles/Modal.css'
-import DataDisplay from './DataDisplay'
 
-
-function Modal({children}){
+function Modal({ children }){
 
   return (
     <div className="modal-backdrop">
