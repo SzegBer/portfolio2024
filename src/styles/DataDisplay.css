@@ -183,3 +183,42 @@
   font-size: 14px;
   text-align: center;
 }
+
+/*--------- REFI ----------*/
+
+.DataDisplay > .refi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.DataDisplay > .refi > h2{
+  padding: 0;
+  margin: 0;
+}
+.DataDisplay > .refi > h3{
+  padding: 0;
+  margin: 0px;
+  flex-basis: 100%;
+}
+.DataDisplay > .refi > p.description {
+  padding: 0;
+  margin: 0;
+  flex-basis: 100%;
+  text-align: justify;
+}
+
+.DataDisplay > .refi > img {
+  flex-basis: 100%;
+  width: 100%;
+}
+.DataDisplay > .refi button {
+  
+}
+.DataDisplay > .refi svg {
+  opacity: 1;
+}

@@ -17,13 +17,21 @@ function Layout() {
 
   const toggleModal = (e) => {
     setModalOpen(!modalOpen)
-    setClickedClassName(e.target.className)
     setClickedItem(filterData(e.target.className))
+    setClickedClassName(e.target.className)
+    
+    const refi = e.target.className.match('refi')
+    if (refi){
+      const nr = e.target.className.replaceAll("refi","")
+      setClickedClassName("refi")
+      setClickedItem(filterData("refi", nr.trim()))
+    } 
   }
 
-  const filterData = (category) => {
-    return data[`${category}`]
+  const filterData = (category, nr = "") => {
+    return data[`${category}${nr}`]
   }
+
     
   return (
   

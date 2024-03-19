@@ -138,7 +138,6 @@
 
 svg {
   opacity: 0;
-  color: #fff;
   display: block;
   margin: auto;
   pointer-events: none;
@@ -160,6 +159,7 @@ svg {
 
 .refi > svg {
   font-size: 40px;
+  color: #fff;
   position: absolute;
   right: 10px;
   top: 5px;
@@ -172,6 +172,7 @@ svg {
   left: -25%;
   top: 0;
   transition-duration: 0.8s;
+  pointer-events: none;
 }
 
 .grid-container > *:hover > .bgImg {
