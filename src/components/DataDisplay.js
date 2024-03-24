@@ -15,7 +15,9 @@ export default function DataDisplay({ clickedItem, clickedClassName }) {
       {clickedItem.map((d,i)=> (
         <div className={clickedClassName} key={i}>
           {d.h2 && <h2>{d.h2}</h2>}
+          {d.h3 && <h3>{d.h3}</h3>}
           <div>
+          {d.p && <p className='description'>{d.p}</p>}
             {d.webUrl && 
               <a href={d.webUrl} target='_blank' rel='noreferrer'>
                 <IconButton aria-label="preview" >
@@ -31,10 +33,8 @@ export default function DataDisplay({ clickedItem, clickedClassName }) {
               </a>
             }
           </div>
-
-          {d.h3 && <h3>{d.h3}</h3>}
-          {d.p && <p className='description'>{d.p}</p>}
           {d.img && <img src={d.img} alt="" />}
+          {d.imgTitle && <p className='imgTitle'>{d.imgTitle}</p>}
         </div>
       ))}
       

@@ -12,6 +12,14 @@ export const techStack = [
     imgTitle: "Adobe PhotoShop"
   },
   {
+    img: "https://cdn.worldvectorlogo.com/logos/figma-5.svg",
+    imgTitle: "Figma"
+  },
+  {
+    img: "https://cdn.worldvectorlogo.com/logos/canva-1.svg",
+    imgTitle: "Canva"
+  },
+  {
     img: "https://cdn.worldvectorlogo.com/logos/html-1.svg",
     imgTitle: "HTML5"
   },
@@ -24,20 +32,8 @@ export const techStack = [
     imgTitle: "SCSS"
   },
   {
-    img: "https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg",
-    imgTitle: "Bootstrap"
-  },
-  {
     img: "https://cdn.worldvectorlogo.com/logos/javascript-1.svg",
     imgTitle: "JavaScript"
-  },
-  {
-    img: "https://cdn.worldvectorlogo.com/logos/jest-2.svg",
-    imgTitle: "Jest"
-  },
-  {
-    img: "https://cdn.worldvectorlogo.com/logos/nodejs.svg",
-    imgTitle: "node.js"
   },
   {
     img: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
@@ -48,6 +44,18 @@ export const techStack = [
     imgTitle: "MUI"
   },
   {
+    img: "https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg",
+    imgTitle: "Bootstrap"
+  },
+  {
+    img: "https://cdn.worldvectorlogo.com/logos/jest-2.svg",
+    imgTitle: "Jest"
+  },
+  {
+    img: "https://cdn.worldvectorlogo.com/logos/nodejs.svg",
+    imgTitle: "node.js"
+  },
+  {
     img: "https://cdn.worldvectorlogo.com/logos/git.svg",
     imgTitle: "git"
   },
@@ -55,14 +63,7 @@ export const techStack = [
     img: "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
     imgTitle: "GitHub"
   },
-  {
-    img: "https://cdn.worldvectorlogo.com/logos/figma-5.svg",
-    imgTitle: "Figma"
-  },
-  {
-    img: "https://cdn.worldvectorlogo.com/logos/canva-1.svg",
-    imgTitle: "Canva"
-  },
+
   {
     img: "https://cdn.worldvectorlogo.com/logos/monday-1.svg",
     imgTitle: "monday"
