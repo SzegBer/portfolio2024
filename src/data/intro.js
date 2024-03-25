@@ -13,6 +13,6 @@ export const intro = [
   },
   {
     h3: "jövő",
-    p: "Korábbi tapasztalataimat hasznosítva szeretnék egy olyan csapatban dolgozni, ahol a feladatok sokszínűsége és a kihívások megfűszerezik a mindennapokat, ahol a munkaadóm megbecsüli az emberi kapcsolatokat, partnerként szólítja meg a munkatársait, és konstruktív párbeszédekkel tekinthetünk együtt a kihívásokra. Szeretném elsősorban a programozásban elmélyíteni a tudásomat és új technológiákat megismerni."
+    p: "Korábbi tapasztalataimat hasznosítva szeretnék egy olyan csapatban dolgozni, ahol a feladatok sokszínűsége és a kihívások megfűszerezik a mindennapokat, ahol a munkaadóm megbecsüli az emberi kapcsolatokat, partnerként szólítja meg a munkatársait, és konstruktív párbeszédekkel tekinthetünk együtt a kihívásokra. Szeretném a programozásban elmélyíteni a tudásomat és új technológiákat megismerni."
   }
 ]

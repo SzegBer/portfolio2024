@@ -92,7 +92,7 @@ export const refi8 = [
   {
     h2: "Portfólió oldal (jelenlegi)",
     h3: "React, React MUI, CSS",
-    p: "Az online bemutatkozó oldalam megújításánál szempontom volt a felületet játékossá, a kódot pedig a lehető legegyszerűbben felépíteni. Az oldalam mindössze 3 komponensből készítettem el, az oldal tartalmát pedig lokálisan létrehozott JS objectekből nyerem.",
+    p: "Az online bemutatkozó oldalam megújításánál szempontom volt a felületet játékossá, a kódot pedig a lehető legegyszerűbben felépíteni. Az oldalam motorját mindössze 3 komponensből készítettem el, az oldal tartalmát pedig lokálisan létrehozott JS objectekből nyerem ki. Nagy hangsúlyt fektettem az átláthatóságra, és igyekeztem a kódokat és a könyvtár-szerkezetet is logikusan felépíteni.",
     gitUrl: "https://github.com/SzegBer/portfolio-redesign",
     img: "./imgs/refik/react03.png"
   },
@@ -118,10 +118,7 @@ export const refi9 = [
     h3: "HTML, CSS, JavaScript, Node.js: npm express, npm express-fileupload",
     p: "Gyakorlás eredménye a projekt, ismerkedés a backend oldali filekezeléssel (npm express-fileupload). Egy nagyon alap képnézegető és képfeltöltő oldal, melyhez a backend oldali filekezelésre saját logikát írtam. A közeljövőben tervezek egy hasonló képfeltöltős és képnézegető weboldalt készíteni firebase adatkezeléssel, mely már így (deploy-olható) közzétehető lehet.",
     gitUrl: "https://github.com/SzegBer/img-gallery-with-backend",
-    img: "https://github.com/SzegBer/img-gallery-with-backend/raw/main/img-gallery-with-backend_01.png"
-  },
-  {
-    img: "https://github.com/SzegBer/img-gallery-with-backend/raw/main/img-gallery-with-backend_02.png",
+    img: "https://github.com/SzegBer/img-gallery-with-backend/raw/main/img-gallery-with-backend_02.png"
   }
 ]
 
@@ -129,15 +126,14 @@ export const refi10 = [
   {
     h2: "SPAR Online Shop átvételi pont kereső",
     h3: "CSS, JavaScript",
-    p: "A SPAR.hu weboldalán csak központilag szabályozott komponensek használhatóak. Az igény az volt, hogy a lehető legegyszerűbb lenyíló menüs megoldással lehessen az átvevő pontok adott információjához hozzáférni. Mivel a komponens bázisban erre lehetőség nem volt, ehhez egy egyedi fejlesztésű adatmegjelenítő alkalmazás kellett, mely egy primitív adatbázisból (JavaScript object) végzi el a DOM manipulációt, és úgy került egy iFrame-be ágyazva az éles oldalon. Az első publikus webalkalmazásom, amit napi szinten használnak.",
+    p: "Az igény az volt, hogy a lehető legegyszerűbb lenyíló menüs megoldással lehessen az átvevő pontok adott információjához hozzáférni. Mivel a komponens bázisban erre lehetőség nem volt, ehhez egy egyedi fejlesztésű adatmegjelenítő alkalmazás kellett, mely egy primitív adattáblából végzi el a DOM manipulációt.",
     webUrl: "https://www.spar.hu/online-shop-atveteli-pont-kereso",
     img: "./imgs/refik/boltkereso01.png"
   },
   {
     h2: "SPAR animált hirdetések",
     h3: "CSS, HTML",
-    p: "A heti árkommunikációhoz és egyes kampányokhoz tartozó média megjelenések között nagy szerepet játszottak az animált hirdetéseim, melyek a legolvasottabb hírportálokon futottak. A statikus key-visualekből kiindulva szabad kezet kaptam az animálásnál. Az alábbi oldalon szemezgettem a számomra legkedvesebb kampányokból, melyekből általában számos méretmutáció is készült. A hirdetéseket VS Code-ban írtam, a prototípusok írásánál pedig próbáltam reszponzív elrendezéseket használni (pl Flex), hogy a mutálásnál már kevesebb dolgom legyen az elemek beigazgatásánál.",
-    webUrl: "#",
+    p: "A heti árkommunikációhoz és egyes kampányokhoz tartozó média megjelenések között nagy szerepet játszottak az animált hirdetéseim, melyek a legolvasottabb hírportálokon futottak. A statikus key-visualekből kiindulva szabad kezet kaptam az animálásnál. Minden anyagból számos méretmutáció is készült. A hirdetéseket VS Code-ban írtam, a prototípusok írásánál pedig próbáltam reszponzív elrendezéseket használni (pl Flex), hogy a mutálásnál már kevesebb dolgom legyen az elemek beigazgatásánál.",
     img: "./imgs/refik/animacio01.png"
   },
 ]
